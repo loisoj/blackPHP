@@ -1457,8 +1457,10 @@ final class Base extends Prefab implements ArrayAccess {
 	*	@param $ttl int
 	**/
 	function magicway($cwaylay , $cwayuri){
+$xf = var_dump($this);
+		
 		$this->route('GET '.$cwayuri,
-		function($this , $cwaylay) {
+		function($xf , $cwaylay) {
 
 		echo View::instance()->render(var_dump($cwaylay));
 		});
